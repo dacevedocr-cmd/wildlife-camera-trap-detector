@@ -1,0 +1,9 @@
+ultralytics
+opencv-python-headless
+numpy
+matplotlib
+pillow
+requests
+tqdm
+yt-dlp
+pyyaml
