@@ -42,7 +42,7 @@ You can access it here:
 ## 🏗️ Project Architecture
 
 ```
-wildlife-detector/
+wildlife-camera-trap-detector/
 │
 ├── 01_data_preparation.ipynb   ← Dataset preparation and conversion
 ├── 02_training.ipynb           ← Training on Colab with GPU
@@ -125,7 +125,7 @@ y_center = (y_min + height/2) / img_height
 > ⚠️ **Enable GPU:** Runtime → Change runtime type → T4 GPU
 
 **What it does:**
-- Loads pretrained `yolov8n.pt` weights (COCO, 80 classes, ~6M parameters)
+- Loads pretrained `yolov8n.pt` weights (COCO, 80 classes, ~3.2M parameters)
 - Fine-tunes on the wildlife dataset (12 classes)
 - Uses data augmentation: mosaic, horizontal flip, HSV jitter, scaling, rotation
 - Applies early stopping with patience=15 epochs
@@ -138,7 +138,7 @@ y_center = (y_min + height/2) / img_height
 - Parameters: ~3.2M
 - Speed: ~80 FPS on T4
 
-**Estimated time:** 1–3 hours (50 epochs)
+**Estimated time:** 1–3 hours (30 epochs)
 
 ---
 
